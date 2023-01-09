@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.inside-box {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;    
+}

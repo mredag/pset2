@@ -1,40 +1,45 @@
 body {
-  width: 60em;
-  margin: 0 auto;
+    width: 60em;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 section {
-  padding: 2em;
-  margin: 1em;
+    padding: 2em;
+    margin: 1em;
 }
 
 #green {
-  background-color: #8ffda7;
+    background-color: #8ffda7;
+    grid-column: 1 / -1;
 }
 
 #orange {
-  background-color: #ffc788;
+    background-color: #ffc788;
+    grid-area: 3/1/4/3;
 }
 
 #yellow {
-  background-color: #ffff92;
+    background-color: #ffff92;
 }
 
 #red {
-  background-color: #ff919c;
+    background-color: #ff919c;
 }
 
 #blue {
-  background-color: #98d2ff;
+    background-color: #98d2ff;
+    grid-area: 2/3/4/4;
 }
 
 ul {
-  padding: 0;
+    padding: 0;
 }
 
 li {
-  background-color: white;
-  padding: 1em;
-  display: block;
-  margin: 1em;
+    background-color: white;
+    padding: 1em;
+    display: block;
+    margin: 1em;
 }

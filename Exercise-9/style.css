@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    display: inline-flex;   
+}
+
+.fa-regular {
+    font-size: 16px;
+    color: rgb(240, 231, 231);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 35px 200px auto;
+    grid-gap: 10px;
+    height: 100%;
+    min-width: 250px;
+    max-width: 350px;
+    background-color: rgb(177, 169, 169);
+    border-radius: 20px;
+    padding-top: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.info-title h6 {
+    color: white;
+}
+
+.title {
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 10px;
+}
+.dot {
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: white;
+}
+
+.picture {
+    grid-row: 2;
+    background-image: url(https://thecatapi.com/api/images/get?format=src&type=jpg&uniqueId=1);
+    background-position: center center;
+    background-size: cover;
+}
+
+.picture2 {
+    grid-row: 2;
+    background-image: url(https://thecatapi.com/api/images/get?format=src&type=jpg&uniqueId=2);
+    background-position: center center;
+    background-size: cover;
+}
+
+.picture3 {
+    grid-row: 2;
+    background-image: url(https://thecatapi.com/api/images/get?format=src&type=jpg&uniqueId=3);
+    background-position: center center;
+    background-size: cover;
+}
+
+.icons {
+    margin-bottom: 10px;
+}
+
+.content {
+    grid-row: 3;
+    padding: 20px 10px;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 375px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}

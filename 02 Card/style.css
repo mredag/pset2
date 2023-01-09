@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+article {
+  width: 300px;
+  margin: auto;
+}
+.image {
+  display: flex;
+  background-color: grey;
+  height: 10rem;
+  align-items: center;
+  justify-content: center;
+}
+div {
+  display: block;
+  border: 0.1rem solid gray;
+  padding: 1rem;
+}

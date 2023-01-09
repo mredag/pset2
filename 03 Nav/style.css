@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(37, 37, 37);
+}
+
+.Logo {
+  color: white;
+}
+
+.container {
+  height: 80px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: rgb(28, 31, 29);
+  justify-content: space-between;
+  padding: 10px 2%;
+  border-bottom: 1px solid rgb(255, 249, 249);
+}
+
+nav ul {
+  display: flex;
+  padding: 10px 10px;
+  gap: 20px;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  color: rgb(185, 180, 180);
+}
+
+nav ul li a:hover {
+  color: rgb(243, 243, 243);
+  transition: 0.3;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 3px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgb(7, 158, 128);
+  border: 2px solid rgb(4, 167, 134);
+}
+
+button:hover {
+  background-color: rgb(9, 139, 63);
+  color: white;
+  transition: 0.3;
+}
+
+.searchBox {
+  padding: 10px 16px;
+  margin: 3px;
+  border: none;
+  border-radius: 6px;
+}
+
+.disabledLink {
+  pointer-events: none;
+  color: rgb(71, 71, 67);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown::after {
+  content: "\25BC";
+  font-size: small;
+  color: #666;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #383232;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.671);
+  min-width: 160px;
+  text-align: center;
+}
+
+.dropdown-content a {
+  color: rgb(240, 233, 233); /* Dark grey text color */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: rgb(104, 96, 96);
+}
+/* Style the menu toggle button */
+.HamburgerMenu {  
+  cursor: pointer; /* Add a pointer cursor on hover */
+  font-size: 24px; /* Increase the size of the hamburger icon */
+  width: 40px; /* Set the width of the menu icon */
+  height: 40px; /* Set the height of the menu icon */
+  display: flex; /* Use flexbox to align the lines vertically */
+  flex-direction: column; /* Align the lines in a column */
+  justify-content: space-between; /* Add space between the lines */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  display: none; /* Hide the button by default */
+}
+
+.HamburgerMenu span {
+  width: 100%; /* Make the lines full width */
+  height: 4px; /* Set the height of the lines */
+  background-color: white; /* Set the color of the lines */
+}
+
+.HamburgerMenu span:hover {
+  background-color: rgb(160, 133, 133); /* Change the color on hover */
+  transition: 0.3s; /* Add a transition effect */
+}
+
+/* Hide the menu items and search box on small screens */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menu-right {
+    display: none;
+  }
+}
+
+/* Show the menu toggle button on small screens */
+@media (max-width: 768px) {
+  .HamburgerMenu {
+    display: flex;
+  }
+}
